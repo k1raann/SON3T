@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT115000;
+const PORT = process.env.PORT;
 const mongoose = require("mongoose");
 const { MONGOURI } = require("./config/valuekeys");
 
