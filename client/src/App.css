@@ -1,0 +1,108 @@
+.logo{
+  margin-left: 5%;
+}
+
+.nav .ul .a{
+  padding : 0 10px;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+.authcard{
+  text-align: center;
+  margin-left: 32.5%;
+}
+
+.card-title{
+  font-weight: bolder;
+}
+
+button{
+  margin: 5%;
+}
+
+.prof-dp{
+  width : 150px;
+  height : 150px;
+  min-width: 150px;
+  border-radius: 50%;
+}
+
+.profile-info{
+  border-bottom-style: groove;
+  justify-content: space-around;
+  display: flex;
+  margin: 10px 0;
+}
+
+.profile-data{
+  display: flex;
+  justify-content: space-around;
+  width: 110%;
+}
+
+.prof-posts{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  align-items: center;
+}
+
+.prof-post{
+  width:32%;
+  margin : 0 2px;
+}
+
+.profile{
+  max-width: 550px;
+  margin : 0px auto;
+}
+
+.home-card{
+  max-width: 450px;
+  height: max-content;
+  margin:25px auto;
+}
+
+.prof-pic{
+  display: flex;
+  width: 150px;
+  /* flex-wrap: nowrap; */
+}
+
+.centered{
+  position: relative;
+  left:-65%;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  display: none;
+  background-color: lightgray;
+  color: darkslateblue;
+  text-align: center;
+}
+
+.prof-dp:hover{
+  opacity: 0.5;
+}
+
+.centered:hover{
+  display: inline-block;
+}
+
+.prof-dp:hover + .centered{
+  display: inline-block;
+}
+
+.toggle{
+  z-index:2;
+  position: absolute;
+  /* margin: auto 20%; */
+}
+
+.file-card-content{
+  padding: 10px;
+}
