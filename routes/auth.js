@@ -26,7 +26,7 @@ router.post("/signup",(req,res)=>{
         }
         bcrypt.hash(password,12).then(hashedPassword =>{
             if(dp)
-            {user = new User({name,email,password : hashedPassword,dp:dp})}
+            {user = new User({name,email.toLowerCase(),password : hashedPassword,dp:dp})}
             else
             {user = new User({name,email,password : hashedPassword})}
         user.save().then(user => {
@@ -50,7 +50,7 @@ router.post("/signin",(req,res)=>{
     {
         res.json({error : "Enter both email and password"})
     }
-    User.findOne({email : email}).then(savedUser =>{
+    User.findOne({email : email.toLowerCase()}).then(savedUser =>{
         if(!savedUser)
         {
             return res.json({error : "Email doesn't exist!"})
