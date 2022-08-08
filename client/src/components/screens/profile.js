@@ -87,11 +87,11 @@ export const Profile = () => {
           </div>
         }
         <div>
-        <h4>{state.name}</h4>
+        <h5>{state.name}</h5>
         <div className='profile-data'>
-            <h6>{myPosts.length} POSTS</h6>
-            <h6>{state?(state.followers?state.followers.length:null):null} FOLLOWERS</h6>
-            <h6>{state?(state.following?state.following.length:null):null} FOLLOWING</h6>
+            <span>{myPosts.length} POSTS</span>
+            <span>{state?(state.followers?state.followers.length:null):null} FOLLOWERS</span>
+            <span>{state?(state.following?state.following.length:null):null} FOLLOWING</span>
         </div>
         </div>
     </div>

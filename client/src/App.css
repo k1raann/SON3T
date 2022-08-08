@@ -25,16 +25,18 @@ button{
 }
 
 .prof-dp{
-  width : 150px;
-  height : 150px;
-  min-width: 150px;
+  width : 100px;
+  height : 100px;
+  min-width: 100px;
   border-radius: 50%;
+  padding: 1px;
 }
 
 .profile-info{
   border-bottom-style: groove;
   justify-content: space-around;
   display: flex;
+  font-size: 12px;
   margin: 10px 0;
 }
 
@@ -50,6 +52,7 @@ button{
   justify-content: space-evenly;
   align-content: space-around;
   align-items: center;
+  padding : 1px;
 }
 
 .prof-post{
@@ -58,7 +61,7 @@ button{
 }
 
 .profile{
-  max-width: 550px;
+  max-width: 450px;
   margin : 0px auto;
 }
 
@@ -70,7 +73,7 @@ button{
 
 .prof-pic{
   display: flex;
-  width: 150px;
+  width: 100px;
   /* flex-wrap: nowrap; */
 }
 
