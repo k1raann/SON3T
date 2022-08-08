@@ -19,7 +19,7 @@ export const Signin = () => {
       email:email,
       password:password
     })}).then(res=>res.json()).then(data=>{
-      console.log(data);
+      // console.log(data);
       if(data.error){
         var errMsg = data.error;
         if(errMsg==="Email doesn't exist!")
