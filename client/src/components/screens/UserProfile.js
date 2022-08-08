@@ -48,7 +48,7 @@ export const UserProfile = () => {
                     "Authorization" : "Bearer" + localStorage.getItem("jwt")},
             body : JSON.stringify({followId:userId})
         }).then(res=>res.json()).then(data=>{
-            console.log(data);
+            // console.log(data);
             setUserProfile(data.followUser)
             setShowFollow(true)
             // dispatch({type:"UPDATE"},{payload : {

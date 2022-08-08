@@ -41,11 +41,10 @@ export const Signin = () => {
     
   }
   return (
-    <div className='authcard'>
       <div className="row">
-        <div className="col s12 m6">
+        <div className='authcard'>
           <div className="card z-depth-5">
-            <div className="card-content ">
+            <div className="card-content">
               <span className="card-title">SIGNIN</span>
               <input type="text" placeholder='Email' value={email} onChange={(e)=>{setemail(e.target.value)}}/>
               <input type="password" placeholder='Password' value = {password} onChange={(e)=>{setpassword(e.target.value)}}/>
@@ -55,8 +54,7 @@ export const Signin = () => {
               <Link to = "/signup"><h6>Don't have an account?</h6></Link>
             </div>
           </div>
-        </div>
+          </div>
       </div>
-    </div>
   )
 }

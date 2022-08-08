@@ -74,9 +74,8 @@ export const Signup = () => {
      }
      
   return (
-    <div className='authcard'>
         <div className="row">
-        <div className="col s12 m6">
+        <div className="authcard">
           <div className="card z-depth-5">
             <div className="card-content ">
               <span className="card-title">SIGNUP</span>
@@ -102,6 +101,5 @@ export const Signup = () => {
           </div>
         </div>
       </div>
-    </div>
   )
 }
