@@ -42,13 +42,13 @@ router.put("/unfollow",requireLogin,(req,res)=>{
 })
 
 router.put("/changePicture",requireLogin,(req,res)=>{
-    console.log(req.body.pic);
+    // console.log(req.body.pic);
     User.findByIdAndUpdate(req.body.userId,
         {$set :{dp : req.body.pic}},{new : true}).select("-password").exec((err, prof) => {
             if(err){ 
                 return res.json({error : err})
             }   
-            console.log(prof);
+            // console.log(prof);
             return res.json({prof})
         })
 })

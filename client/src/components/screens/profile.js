@@ -47,7 +47,7 @@ export const Profile = () => {
       if(result.prof)
       {
       dispatch({type : "UPDATE_USER",payload:result.prof})
-      console.log(result,state);
+      // console.log(result,state);
       }
     }).catch(err => console.log(err));
       }

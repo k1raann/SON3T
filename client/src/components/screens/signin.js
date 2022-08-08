@@ -19,6 +19,7 @@ export const Signin = () => {
       email:email,
       password:password
     })}).then(res=>res.json()).then(data=>{
+      console.log(data);
       if(data.error){
         var errMsg = data.error;
         if(errMsg==="Email doesn't exist!")
@@ -29,13 +30,14 @@ export const Signin = () => {
         M.toast({html: errMsg, classes : "#d50000 red accent-4"});
       }
       else{
+        // console.log(data);
         dispatch({type : "USER", payload:data.user})
         localStorage.setItem("jwt",data.token);
         localStorage.setItem("user",JSON.stringify(data.user));
         M.toast({html: data.message, classes : "#00c853 green accent-4"})
         navigate("/");
       }
-    }).catch(err=>{console.log(err);});
+    }).catch(err=>{console.log(err)});
     
   }
   return (

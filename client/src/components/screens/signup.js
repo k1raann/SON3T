@@ -43,7 +43,6 @@ export const Signup = () => {
       return;
     }
     if(!isDp){
-    console.log("nodp running");
     fetch("/signup", {method : "post",
     headers : {"Content-Type":"application/json"},
     body : JSON.stringify({

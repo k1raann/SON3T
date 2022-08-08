@@ -13,7 +13,7 @@ const { JWT_SECRETKEY } = require("../config/valuekeys");
 //signup route - user creation
 router.post("/signup",(req,res)=>{
     const {name, email, password, dp} = req.body;
-    console.log(req.body);
+    // console.log(req.body);
     let user=null;
     if(!name||!email||!password)
     {
@@ -30,7 +30,7 @@ router.post("/signup",(req,res)=>{
             else
             {user = new User({name,email,password : hashedPassword})}
         user.save().then(user => {
-            console.log(user);
+            // console.log(user);
             res.json({message : "Success!"})
         }).catch(err=>{
             console.log(err)
