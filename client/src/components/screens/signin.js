@@ -18,7 +18,7 @@ export const Signin = () => {
     body : JSON.stringify({
       email:email,
       password:password
-    })}).then(res=>{console.log(res);res.json()}).then(data=>{
+    })}).then(res=>res.json()).then(data=>{
       console.log(data);
       if(data.error){
         var errMsg = data.error;
