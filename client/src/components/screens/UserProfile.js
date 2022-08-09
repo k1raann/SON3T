@@ -62,15 +62,15 @@ export const UserProfile = () => {
   return (
     <div className='profile'>    
     <div className='profile-info'>
-        <div>
+        <div className='prof-pic'>
         <img src={prof?prof.user.dp:null} alt="profile photo" className='prof-dp'/>
         </div>
         <div>
         <h4>{prof?prof.user.name:null}</h4>
         <div className='profile-data'>
-            <h6>{prof?prof.posts.length:null} POSTS</h6>
-            <h6>{prof?(userProfile?userProfile.followers.length:prof.user.followers.length):null} FOLLOWERS</h6>
-            <h6>{prof?(userProfile?userProfile.following.length:prof.user.following.length):null} FOLLOWING</h6>
+            <span>{prof?prof.posts.length:null} POSTS</span>
+            <span>{prof?(userProfile?userProfile.followers.length:prof.user.followers.length):null} FOLLOWERS</span>
+            <span>{prof?(userProfile?userProfile.following.length:prof.user.following.length):null} FOLLOWING</span>
             {/* <h6>{state.followers!==undefined?state.followers.length:null} FOLLOWERS</h6>
             <h6>{state.following!==undefined?state.following.length:null} FOLLOWING</h6> */}
         </div>
